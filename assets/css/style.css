@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+}
+
+.clock-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.date-container {
+
+}
+
+.clock { 
+	width: 75vw;
+	height: 75vw;
+	position: relative;
+	border: 2rem double #000;
+	border-radius: 50%;
+}
+
+.hand {
+	position: absolute; 
+	transition: 0.5s;
+	background-color: #444;
+	top: 50%;
+	right: 50%;
+	border-bottom: 5px;
+	border-radius: 50% 0 0 50%;
+	transform-origin: 100%;  /* default is 50%.  Setting to 100% changes it to the end of x-axis */
+	transform: rotate(90deg);  /*Moves the hands from 9 to 12 o'clock */
+}
+
+.hour-hand {
+	width: 30%;
+	height: 25px;
+}
+
+.minute-hand {  
+	width: 44%;
+	height: 12px;
+}
+
+.second-hand { 
+	border-left: 15px solid red;
+	width: 48%;
+	height: 15px; 
+}
